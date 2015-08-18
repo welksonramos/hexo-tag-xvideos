@@ -13,5 +13,13 @@
     "xvideos"
   ],
   "author": "Welkson Ramos",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welksonramos/hexo-tag-xvideos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/welksonramos/hexo-tag-xvideos/issues"
+  },
+  "homepage": "https://github.com/welksonramos/hexo-tag-xvideos#readme"
 }
