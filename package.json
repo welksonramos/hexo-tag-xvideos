@@ -1,0 +1,17 @@
+{
+  "name": "hexo-tag-xvideos",
+  "version": "0.1.0",
+  "description": "Embed xvideos in your posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video",
+    "hexo",
+    "tag",
+    "xvideos"
+  ],
+  "author": "Welkson Ramos",
+  "license": "MIT"
+}
