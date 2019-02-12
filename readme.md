@@ -1,5 +1,8 @@
-# About
-> This is a [Hexo](http://hexo.io) tag plugin to include player [Xvideos](https://xvideos.com) on your pages / posts ( ͡°﻿ ͜ʖ ͡°)
+# Hexo-tag-Xvideos
+
+[![npm version](https://img.shields.io/npm/v/hexo-tag-xvideos.svg)](https://www.npmjs.com/package/hexo-tag-xvideos) [![license](https://img.shields.io/npm/l/hexo-tag-xvideos.svg?style=flat)](https://raw.github.com/welksonramos/hexo-tag-xvideos/blob/master/LICENSE)
+
+> Embeded [Xvideos](https://xvideos.com) player in Hexo posts/pages ( ͡°﻿ ͜ʖ ͡°)
 
 ## Installation
 
@@ -34,4 +37,4 @@ xvideos:
 
 ## License
 
-Copyright (c) 2015, Welkson Ramos. Licensed under the [MIT](LICENSE) license.
+&copy; Licensed under the MIT License.
