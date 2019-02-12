@@ -1,24 +1,24 @@
 /**
 * hexo-tag-xvideos
 * https://github.com/welksonramos/hexo-tag-xvideos
-* Copyright (c) 2015, Welkson Ramos
+* Copyright (c) 2015-present, Welkson Ramos
 * Licensed under the MIT license.
 *
 * Syntax:
 * {% xvideos [video_id] %} or {% [video_id [width [height]]] %}
 */
 
-hexo.extend.tag.register('xvideos', function(args){
-	var base = 'http://flashservice.xvideos.com/embedframe/',
-	video_id = args[0],
-	width = args[1],
-	height = args[2];
+hexo.extend.tag.register('xvideos', function (args) {
+  let base = 'http://flashservice.xvideos.com/embedframe';
+  let video_id = args[0];
+  let width = args[1];
+  let height = args[2];
 
-	var config = hexo.config.xvideos || {};
-	config.width = config.width || 510;
-	config.height = config.height || 400;
+  let config = hexo.config.xvideos || {};
+  config.width = config.width || 510;
+  config.height = config.height || 400;
 
-var tag = '<iframe src="' + base + video_id + '" frameborder=0 width='+ width +' height=' + height +' scrolling=no></iframe>';
-return tag;
+  let tag = `<iframe src=${base}/${video_id}frameborder=0 width=${width}height=${height}scrolling=no></iframe>`;
+  return tag;
 
 });
