@@ -23,7 +23,7 @@ Simple example:
 {% xvideos 9764591 %}
 ```
 
-## Configuration
+## Options
 
 You can configure the size of the video player in your main _config.yml:
 
