@@ -8,17 +8,21 @@
 * {% xvideos [video_id] %} or {% [video_id [width [height]]] %}
 */
 
-hexo.extend.tag.register('xvideos', function (args) {
-  let base = 'http://flashservice.xvideos.com/embedframe';
+const BASE_URL = 'http://flashservice.xvideos.com/embedframe';
+
+// Configuration
+
+hexo.config.xvideos = Object.assign({
+  width: hexo.config.xvideos.width || 510,
+  height: hexo.config.xvideos.height || 400
+}, hexo.config.xvideos);
+
+hexo.extend.tag.register('xvideos', (args) => {
   let video_id = args[0];
-  let width = args[1];
-  let height = args[2];
+  let width = args[1] || hexo.config.xvideos.width;
+  let height = args[2] || hexo.config.xvideos.height;
 
-  let config = hexo.config.xvideos || {};
-  config.width = config.width || 510;
-  config.height = config.height || 400;
-
-  let tag = `<iframe src=${base}/${video_id}frameborder=0 width=${width}height=${height}scrolling=no></iframe>`;
+  let tag = `<iframe src=${BASE_URL}/${video_id} frameborder=0 width=${width} height=${height} scrolling=no></iframe>`;
   return tag;
 
-});
+}, { async: true });
